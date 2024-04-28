@@ -2,37 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit card</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
-    <ul id="nav-menu">
-        <li> <a href="#1">Home</a> /</li>
-        <li> <a href="#2">Articles</a> /</li>
-    </ul>
-    <h1>The Difference Between Responsive and Adaptive Design</h1>
-    <div class="clearfix" id="main">
-        <img src="./img/icon.png" alt="Аватарка">
-        <ul>
-            <li>Author</li>
-            <li><a href="#3">Geoff Graham</a></li>
-        </ul>
-        <ul>
-            <li>49 Comments</li>
-            <li><a href="#4">Go to comments</a></li>
-        </ul>
-        <div id="transfer-block">
-        <ul>
-            <li>Published</li>
-            <li>11, 2018</li>
-        </ul>
-        <ul>
-            <li>Updated</li>
-            <li>Nov 17, 2018</li>
-        </ul>
-    </div>
-    </div>
+  <div class="container">
+   <div class="title-card">
+      <p>credit card details</p>
+    </div> 
+	<form>
+		<label for="card-number">Card Number</label>
+		<input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
 
-</body>
-</html>
+		<label for="card-holder">Name On Card</label>
+		<input type="text" id="card-holder" name="card-holder" placeholder="Name Surname">
+
+     <div class="expiry">
+		 <label for="expiry-date">Expiry Date</label>
+		 <input type="text" id="expiry-date" name="expiry-date" placeholder="02">
+		 <input type="text" id="expiry-year" name="expiry-year" placeholder="2017">
+
+		 <label for="cvv">CVV</label>
+		 <input type="text" id="cvv" name="cvv" placeholder="***">
+		</div>
+
+		 <input type="submit" value="Отправить">
+	 </form> 
+  </div>
+ </body>
+ </html>
