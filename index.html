@@ -9,28 +9,28 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
-  <div class="container">
-   <div class="title-card">
-      <p>credit card details</p>
-    </div> 
-	<form>
-		<label for="card-number">Card Number</label>
-		<input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
-
-		<label for="card-holder">Name On Card</label>
-		<input type="text" id="card-holder" name="card-holder" placeholder="Name Surname">
-
-     <div class="expiry">
-		 <label for="expiry-date">Expiry Date</label>
-		 <input type="text" id="expiry-date" name="expiry-date" placeholder="02">
-		 <input type="text" id="expiry-year" name="expiry-year" placeholder="2017">
-
-		 <label for="cvv">CVV</label>
-		 <input type="text" id="cvv" name="cvv" placeholder="***">
-		</div>
-
-		 <input type="submit" value="Отправить">
-	 </form> 
-  </div>
+    <h3>Inputs</h3>
+    <input type="text" placeholder="Enter some text" disabled>
+    <input type="text" value="valid text">
+    <input type="text" value="invalid text" pattern="\d">
+    <h3>Check boxes</h3>
+    <label>
+        <input type="checkbox" class="sub-scribe"> Subscribe
+    </label>
+    <label>
+        <input type="checkbox" class="sub-scribe" checked> Subscribe
+    </label>
+    <h3>Raddio Buttons</h3>
+    <label>Gender:</label>
+    <label><input type="radio" name="gender" checked>Male</label>
+    <label><input type="radio" name="gender">Female</label>
+    <h3>Buttons</h3>
+    <button>Active</button>
+    <button class="danger">Danger</button>
+    <button disabled>Disabled</button>
+    <button class="circle">+</button>
+    <button class="circle danger">-</button>
+    <h3>Text area</h3>
+    <textarea placeholder="Enter some text..."></textarea>
  </body>
  </html>
